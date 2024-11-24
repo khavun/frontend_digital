@@ -46,7 +46,12 @@ const ExpenseForm = () => {
         }
     }
     return (
-        <Box component="form" sx={{ pl: 8, pr:8, pt:2, pb:2, margin: 'auto', backgroundColor: 'white', boxShadow: 3, borderRadius: '12px' }}>
+        <Box component="form" sx={{ p: {
+            xs: 2,  
+            sm: 4,  
+            md: 6,  
+            lg: 8,  
+            xl: 10}, margin: 'auto', backgroundColor: 'white', boxShadow: 3, borderRadius: '12px' }}>
             <Typography sx={{marginBottom: 3}}>Please Input Your Expense </Typography>
             <Grid container spacing={2} sx={{ mb:2}}>
                 <Grid item xs={12} sm={3}>

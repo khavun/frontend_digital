@@ -71,8 +71,8 @@ const Login = () => {
     <Box
       component="form"
       sx={{
-        paddingLeft: '60px',
-        paddingRight: '60px'
+        paddingLeft: { xs: '16px', sm: '32px', md: '48px', lg: '60px', xl: '80px' },
+    paddingRight: { xs: '16px', sm: '32px', md: '48px', lg: '60px', xl: '80px' },
       }}
     >
       <Typography

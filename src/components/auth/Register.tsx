@@ -139,8 +139,8 @@ const Register = () => {
             component="form"
             sx={{
                 flexDirection: "column",
-                paddingLeft: '80px',
-                paddingRight: '80px',
+                paddingLeft: { xs: '16px', sm: '32px', md: '48px', lg: '60px', xl: '80px' },
+                paddingRight: { xs: '16px', sm: '32px', md: '48px', lg: '60px', xl: '80px' },
             }}
         >
         

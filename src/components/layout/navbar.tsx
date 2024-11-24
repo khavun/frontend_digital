@@ -58,7 +58,10 @@ const Navbar = () => {
 
   return (
     <AppBar position="static" elevation={0} sx={{ backgroundColor: '#FFFFFF' }}>
-      <Toolbar sx={{ ml: 8 }}>
+      <Toolbar 
+      sx={{ 
+        ml: { xs: 1, sm: 3, md: 7, lg: 10 },
+        mr: { xs: 1, sm: 3, md: 7, lg: 10 } }}>
         <Box
           component="img"
           src="/images/logo.png"

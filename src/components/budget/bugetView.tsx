@@ -120,7 +120,8 @@ const BudgetView = () => {
 
   return (
     <Container maxWidth={false} sx={{ backgroundColor: "#F4F7FA" }}>
-      <Box sx={{ ml: 5, mr: 5 }}>
+      <Box sx={{ ml: { xs: 1, sm: 3, md: 7, lg: 10 }, 
+                mr: { xs: 1, sm: 3, md: 7, lg: 10 },  }}>
         <Typography
           sx={{
             color: "324C5B",
@@ -136,8 +137,8 @@ const BudgetView = () => {
 
       <Box
         sx={{
-          ml: 5,
-          mr: 5,
+          ml: { xs: 1, sm: 3, md: 7, lg: 10 }, 
+          mr: { xs: 1, sm: 3, md: 7, lg: 10 }, 
           boxShadow: 3,
           backgroundColor: "white",
           borderRadius: "12px",
@@ -174,7 +175,8 @@ const BudgetView = () => {
         </Grid>
       </Box>
 
-      <Box sx={{ ml: 5, mr: 5, mb: 5, mt: 1 }}>
+      <Box sx={{ ml: { xs: 1, sm: 3, md: 7, lg: 10 }, 
+                mr: { xs: 1, sm: 3, md: 7, lg: 10 }, mb: 5, mt: 1 }}>
         <Typography
           sx={{
             color: "324C5B",
@@ -187,7 +189,8 @@ const BudgetView = () => {
         </Typography>
       </Box>
 
-      <Box sx={{ ml: 5, mr: 5 }}>
+      <Box sx={{ ml: { xs: 1, sm: 3, md: 7, lg: 10 }, 
+                mr: { xs: 1, sm: 3, md: 7, lg: 10 },  }}>
         <Grid container spacing={3}>
           {budgets.map((budget) => (
             <Grid item xs={12} sm={6} md={4} key={budget.id}>
@@ -199,7 +202,8 @@ const BudgetView = () => {
         </Grid>
       </Box>
 
-      <Box sx={{ ml: 5, mr: 5, mb: 2, mt: 7 }}>
+      <Box sx={{ ml: { xs: 1, sm: 3, md: 7, lg: 10 }, 
+                mr: { xs: 1, sm: 3, md: 7, lg: 10 },  mb: 2, mt: 7 }}>
         <Typography
           sx={{
             color: "324C5B",
@@ -212,7 +216,8 @@ const BudgetView = () => {
         </Typography>
       </Box>
 
-      <Box sx={{ ml: 5, mr: 5 }}>
+      <Box sx={{ ml: { xs: 1, sm: 3, md: 7, lg: 10 }, 
+                mr: { xs: 1, sm: 3, md: 7, lg: 10 },  }}>
         <Grid container spacing={3}>
           {budgets2.map((budget) => (
             <Grid item xs={12} sm={6} md={4} key={budget.id}>

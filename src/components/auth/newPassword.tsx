@@ -69,6 +69,7 @@ const New = () => {
                 backgroundColor: '#C4CFD7',
                 justifyContent: 'center',
                 alignItems: 'center',
+                padding: 0,
             }}
         >
             <Box
@@ -77,12 +78,13 @@ const New = () => {
                     boxShadow: 3,
                     borderRadius: '20px',
                     backgroundColor: '#FFFFFF',
-                    width: '910px',
-                    height: '789px',
-                    flexDirection: isSmallScreen ? 'column' : 'row',
+                    width: { xs: '100%', sm: '910px' }, // Full width on small screens
+                    height: { xs: 'auto', sm: '789px' }, // Auto height on small screens
+                    flexDirection: { xs: 'column', sm: 'row' }, // Stack items vertically on small screens
+                    padding: { xs: '20px', sm: '0' }, // Add padding on small screens
                 }}
             >
-                <Box sx={{ width: '588px', padding: '60px' }}>
+                <Box sx={{ width: { xs: '100%', sm: '588px' }, padding: { xs: '20px', sm: '60px' } }}>
                     <Box
                         component="img"
                         src="/images/logo.png"
@@ -93,6 +95,7 @@ const New = () => {
                             position: 'relative',
                             opacity: 1,
                             cursor: 'pointer',
+                            marginBottom: '20px', // Adjust margin for smaller screens
                         }}
                     />
                     <Box>
@@ -100,9 +103,9 @@ const New = () => {
                             sx={{
                                 color: '#6DB33F',
                                 fontWeight: 500,
-                                fontSize: '40px',
+                                fontSize: { xs: '30px', sm: '40px' }, // Smaller font on small screens
                                 fontFamily: 'Poppins',
-                                lineHeight: '60px',
+                                lineHeight: { xs: '40px', sm: '60px' },
                             }}
                         >
                             Please enter a new password below
@@ -117,7 +120,7 @@ const New = () => {
                                     color: '#324C5B',
                                     fontFamily: 'Poppins',
                                     fontWeight: '400',
-                                    fontSize: '15px',
+                                    fontSize: { xs: '14px', sm: '15px' }, // Smaller font on small screens
                                     lineHeight: '22.5px',
                                 }}
                             >
@@ -143,11 +146,11 @@ const New = () => {
                                     )}
                                 </IconButton>
                             </InputLabel>
-
+    
                             <TextField
                                 id="password"
                                 fullWidth
-                                type={showPassword ? "text" : "password"}
+                                type={showPassword ? 'text' : 'password'}
                                 placeholder="Enter your password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
@@ -170,7 +173,7 @@ const New = () => {
                                     color: '#324C5B',
                                     fontFamily: 'Poppins',
                                     fontWeight: '400',
-                                    fontSize: '15px',
+                                    fontSize: { xs: '14px', sm: '15px' },
                                     lineHeight: '22.5px',
                                     marginTop: 3,
                                 }}
@@ -197,11 +200,11 @@ const New = () => {
                                     )}
                                 </IconButton>
                             </InputLabel>
-
+    
                             <TextField
                                 id="confirm_password"
                                 fullWidth
-                                type={showConfirmPassword ? "text" : "password"}
+                                type={showConfirmPassword ? 'text' : 'password'}
                                 placeholder="Confirm your password"
                                 value={confirm_password}
                                 onChange={(e) => setConfirmPassword(e.target.value)}
@@ -221,13 +224,13 @@ const New = () => {
                             sx={{
                                 backgroundColor: '#6DB33F',
                                 padding: 1.5,
-                                width: '259px',
+                                width: { xs: '100%', sm: '259px' }, // Full width on small screens
                                 textAlign: 'left',
                                 borderRadius: '5px',
                                 marginTop: 6,
                                 fontWeight: 500,
-                                fontSize: '22px',
-                                lineHeight: '33px',
+                                fontSize: { xs: '18px', sm: '22px' }, // Smaller font on small screens
+                                lineHeight: { xs: '28px', sm: '33px' },
                                 fontFamily: 'Poppins',
                             }}
                             onClick={handleNewPassword}
@@ -239,6 +242,7 @@ const New = () => {
             </Box>
         </Container>
     );
+    
 };
 
 export default New;

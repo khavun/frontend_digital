@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Grid, TextField, IconButton, Typography, InputAdornment, Container, Box } from '@mui/material';
 import TransactionExpense from './transactionExpense';
-import { Grade } from '@mui/icons-material';
+import { Grade, Margin } from '@mui/icons-material';
 import DataTable from '../table/DataTable';
 import Filter from '../table/filter';
 
@@ -16,18 +16,19 @@ const Income = () => {
 
     return (
         <Container maxWidth={false} sx={{ backgroundColor: '#F4F7FA'}}>
-            <Box sx={{display: 'flex'}}>
-                <Box sx={{width: '50px'}}></Box>
+            <Box sx={{ml: { xs: 1, sm: 3, md: 7, lg: 10 }, 
+                mr: { xs: 1, sm: 3, md: 7, lg: 10 }, }}>
                 <Box>
                     <Typography sx ={{color:'324C5B', fontWeight: 600, fontSize: '32px', lineHeight: '48px', letterSpacing: '-2%', fontFamily: 'Poppins'}}>My Income</Typography>
                     <Typography sx={{marginBottom: -5}}>Transaction Income</Typography>
                 </Box>
-                <Box sx={{width: '50px'}}></Box>
             </Box>
-            <Box sx={{margin:'50px'}}>
+            <Box sx={{ml: { xs: 1, sm: 3, md: 7, lg: 10 }, 
+                mr: { xs: 1, sm: 3, md: 7, lg: 10 }, marginTop: '50px'}}>
                 <TransactionExpense/>
             </Box>
-            <Box sx={{margin: '50px', boxShadow: 3, borderRadius: '12px', backgroundColor: 'white'}}>
+            <Box sx={{ml: { xs: 1, sm: 3, md: 7, lg: 10 }, 
+                mr: { xs: 1, sm: 3, md: 7, lg: 10 },marginTop: '50px', boxShadow: 3, borderRadius: '12px', backgroundColor: 'white'}}>
                 <Filter/>
                 <DataTable data={data} columns={columns}></DataTable>
             </Box>

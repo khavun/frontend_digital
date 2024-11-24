@@ -116,7 +116,8 @@ const BudggetDetail = ({ params }: { params: Promise<{ id: string }> }) => {
   );
   return (
     <Container maxWidth={false} sx={{ backgroundColor: "#F4F7FA", fontFamily:'Poppins' }}>
-      <Box sx={{ ml: 8, mr: 8, pt: 3 }}>
+      <Box sx={{ ml: { xs: 1, sm: 3, md: 7, lg: 10 }, 
+                mr: { xs: 1, sm: 3, md: 7, lg: 10 }, pt: 3 }}>
         <Typography
           sx={{
             color: "324C5B",

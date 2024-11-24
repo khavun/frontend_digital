@@ -80,14 +80,29 @@ const Verify = () => {
                     boxShadow: 3,
                     borderRadius: '20px',
                     backgroundColor: '#FFFFFF',
-                    width: '910px',
-                    height: '654px',
+                    width: {
+                        xs: '100%', 
+                        sm: '600px', 
+                        md: '910px', 
+                      },
+                      height: {
+                        xs: 'auto', 
+                        sm: 'auto', 
+                        md: '654px', 
+                      },
                     flexDirection: isSmallScreen ? 'column' : 'row',
 
                 }}
             >
                 {/* Head Logo */}
-                <Box sx={{padding: '57px'}}>
+                <Box sx={{
+                    padding: {
+                    xs: '20px',  
+                    sm: '30px',  
+                    md: '40px',  
+                    lg: '57px',  
+                    },
+                }}>
                     <Box
                         component="img"
                         src="/images/logo.png"
@@ -182,14 +197,14 @@ const Verify = () => {
                                 color="success"
                                 sx={{
                                     backgroundColor: '#6DB33F',
-                                    height: '64px',
+                                    height: { xs: '48px', sm: '56px', md: '64px' },
                                     marginLeft: 'auto',
                                     borderRadius: '5px',
                                     textTransform: 'none',
-                                    marginTop: 3,
+                                    marginTop: { xs: 2, sm: 3, md: 3 }, 
                                     fontWeight: 500,
-                                    fontSize: '22px',
-                                    lineHeight: '33px',
+                                    fontSize: { xs: '16px', sm: '18px', md: '22px' }, 
+                                    lineHeight: { xs: '24px', sm: '28px', md: '33px' }, 
                                     fontFamily: 'Poppins'
                                 }}
                                 onClick={handleVerify}
@@ -197,6 +212,7 @@ const Verify = () => {
                                 Verify
                             </Button>
                         </Box>
+
                     </Box>
                 </Box>
             </Box>

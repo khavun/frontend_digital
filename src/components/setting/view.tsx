@@ -32,7 +32,12 @@ const View = () => {
         <Box sx={{ ml: 7, mr: 7, pt:3 }}>
             <Typography sx={{color: "324C5B", fontWeight: 600,fontSize: "32px",lineHeight: "48px",fontFamily: "Poppins",}}>Setting</Typography>
         </Box> 
-        <Box sx={{ml:7, mr:7}}>
+        <Box
+            sx={{
+                ml: { xs: 1, sm: 3, md: 7, lg: 10 }, 
+                mr: { xs: 1, sm: 3, md: 7, lg: 10 }, 
+            }}
+>
             <Grid container spacing={10}>
                 <Sidbar/>
                 <Grid item xs={12} md={9}>
