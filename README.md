@@ -3,6 +3,8 @@
 
 git clone 'url'
 npm install --legacy-peer-deps
+__or__
+npm run pk
 
 ```bash
 npm run dev
@@ -23,6 +25,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 /signup
 /forgot
 /verify
+/setting
+/setting/category
 /new_password
 /income
 /expense

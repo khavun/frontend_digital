@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "create-module": "ts-node createModule.ts"
+    "create-module": "ts-node createModule.ts",
+    "pk": "npm install --legacy-peer-deps"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
