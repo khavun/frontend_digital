@@ -1,8 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+git clone 'url'
+npm install --legacy-peer-deps
 
 ```bash
 npm run dev
@@ -15,22 +15,57 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* --------------------------------------------for access to page
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+/
+/home
+/signin
+/signup
+/forgot
+/verify
+/new_password
+/income
+/expense
+/budget
+/budget/1
+/butget/edit/1
+/budget/create
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+*basic--------------------------------------------Structure
 
-## Learn More
+npm create-module module_name
 
-To learn more about Next.js, take a look at the following resources:
+frontend_digital/
+│
+├── .next/                # Automatically generated folder with build files (don't modify manually)
+├── node_modules/         # Project dependencies
+├── public/               # Static files (images, icons, etc.)
+│   └── images/           # Example of an image folder
+├── src/                  # (Optional) A directory to organize your source co
+│   ├── components/       # React components used across the app
+│   ├── pages/            # Next.js pages (each file is a route)
+│   ├── styles/           # Global and component-specific styles
+│   ├── utils/            # Utility functions, hooks, and other helper files
+│   ├── app
+│   │   ├── page.tsx      # this is my first page
+│   │   └── home
+│   │       └──page.tsx   # page dashboard
+│   └── modules           # for generat structure
+│   
+└── pages/                # for write logic server side
+    ├── login.ts
+    ├── logout.ts
+    ├── register.ts
+    └── test-db.ts
+├── .gitignore            # Git ignore file
+├── package.json          # Project dependencies and scripts
+├── next.config.js        # Next.js configuration file (optional)
+└── tsconfig.json         # TypeScript configuration (if using TypeScript)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+           
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
